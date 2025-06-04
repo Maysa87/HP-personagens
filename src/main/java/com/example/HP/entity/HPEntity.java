@@ -1,21 +1,24 @@
-package com.example.movies.entity;
+package com.example.HP.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
 
-@Table(name="movie")
-@Entity(name="movie")
+import java.time.LocalDate;
+
+@Table(name="HP")
+@Entity(name="HP")
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
 @EqualsAndHashCode(of = "id")
 @Builder
-public class MovieEntity {
+public class HPEntity {
     @Id @GeneratedValue(strategy = GenerationType.UUID)
-    private Long id;
+    private String id;
     private String name;
-    private String type;
-    private Long duration;
-    private Long releaseYear;
+    private LocalDate age;
+    private String house;
+    private String email;
 }
+

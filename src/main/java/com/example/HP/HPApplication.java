@@ -1,13 +1,13 @@
-package com.example.movies;
+package com.example.HP;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class MoviesApplication {
+public class HPApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(MoviesApplication.class, args);
+		SpringApplication.run(HPApplication.class, args);
 	}
 
 }

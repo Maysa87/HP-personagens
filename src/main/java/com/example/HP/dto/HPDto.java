@@ -15,7 +15,6 @@ public class HPDto {
     private String name;
     private LocalDate age;
     private String house;
-    private String email;
 
     public String getId() {
         return id;
@@ -43,13 +42,6 @@ public class HPDto {
     }
     public void setAge(String house) {
         this.house = house;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-    public void setEmail(String email) {
-        this.email = email;
     }
 
 }

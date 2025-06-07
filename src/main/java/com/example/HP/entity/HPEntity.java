@@ -13,7 +13,7 @@ import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
 @Table(name = "HP")
-@Entity(name = "HP")
+@Entity
 @AllArgsConstructor
 @NoArgsConstructor
 @EqualsAndHashCode(of = "id")
@@ -24,6 +24,47 @@ public class HPEntity {
 	@GeneratedValue(strategy = GenerationType.UUID)
 	private String id;
 	private String name;
-	private LocalDate age;
+	private LocalDate bornDate;
 	private String house;
+	private String base64Img;
+
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public LocalDate getBornDate() {
+		return bornDate;
+	}
+
+	public void setBornDate(LocalDate bornDate) {
+		this.bornDate = bornDate;
+	}
+
+	public String getHouse() {
+		return house;
+	}
+
+	public void setHouse(String house) {
+		this.house = house;
+	}
+
+	public String getBase64Img() {
+		return base64Img;
+	}
+
+	public void setBase64Img(String base64Img) {
+		this.base64Img = base64Img;
+	}
 }

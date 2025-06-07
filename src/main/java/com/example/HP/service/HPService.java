@@ -1,11 +1,13 @@
 package com.example.HP.service;
 
+import java.time.LocalDate;
 import java.util.List;
 
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.example.HP.dto.HPDto;
+import com.example.HP.entity.HPEntity;
 import com.example.HP.mapper.HPMapper;
 import com.example.HP.repository.HPRepository;
 
@@ -22,5 +24,13 @@ public class HPService {
 	@Transactional
 	public List<HPDto> getHP() {
 		return hpMapper.entitiesToDtos(hpRepository.findAll());
+	}
+
+	@Transactional
+	public List<HPDto> filtro(String nome, String house, LocalDate bornDate) {
+
+		return hpMapper.entitiesToDtos(
+				hpRepository.findByNameContainingIgnoreCaseOrBornDateGreaterThanEqualOrHouseContainingIgnoreCase(nome,
+						bornDate, house));
 	}
 }

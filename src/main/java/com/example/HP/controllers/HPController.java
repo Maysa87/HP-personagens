@@ -28,13 +28,8 @@ public class HPController {
 	}
 
 	@GetMapping("/filtro")
-	public ResponseEntity<List<HPDto>> filtroPorNome(@RequestParam(required = false) String name,
+	public ResponseEntity<List<HPDto>> filtro(@RequestParam(required = false) String name,
 			@RequestParam(required = false) String house, @RequestParam(required = false) LocalDate bornDate) {
 		return ResponseEntity.ok(hpService.filtro(name, house, bornDate));
-	}
-
-	@GetMapping("/filtroPorCasa")
-	public ResponseEntity<List<HPDto>> filtrarPorCasa(@RequestParam("house") String house) {
-		return ResponseEntity.ok(hpService.filtro(house, null, null));
 	}
 }

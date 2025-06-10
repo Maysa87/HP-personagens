@@ -1,4 +1,4 @@
-package com.example.HP;
+package com.example.hp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

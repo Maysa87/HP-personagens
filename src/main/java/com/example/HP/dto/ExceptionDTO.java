@@ -1,4 +1,4 @@
-package com.example.HP.dto;
+package com.example.hp.dto;
 
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
 

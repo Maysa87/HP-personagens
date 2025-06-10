@@ -1,6 +1,6 @@
-package com.example.HP.exception;
+package com.example.hp.exception;
 
-import com.example.HP.dto.ExceptionDTO;
+import com.example.hp.dto.ExceptionDTO;
 import jakarta.persistence.EntityNotFoundException;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;

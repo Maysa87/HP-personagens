@@ -12,7 +12,7 @@
 		<relativePath/>
 	</parent>
 
-	<artifactId>HP</artifactId>
+	<artifactId>hp</artifactId>
 	<version>1.1.0</version>
 	<name>HP</name>
 	<description>Simple Api project</description>

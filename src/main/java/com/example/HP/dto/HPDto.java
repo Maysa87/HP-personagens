@@ -1,4 +1,4 @@
-package com.example.HP.dto;
+package com.example.hp.dto;
 
 import java.time.LocalDate;
 
@@ -16,17 +16,17 @@ import lombok.ToString;
 @AllArgsConstructor
 @Setter
 public class HPDto {
-	private String id;
+	private Long id;
 	private String name;
 	private LocalDate bornDate;
 	private String house;
 	private String base64Img;
 
-	public String getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(String id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 

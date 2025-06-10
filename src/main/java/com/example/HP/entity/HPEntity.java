@@ -1,4 +1,4 @@
-package com.example.HP.entity;
+package com.example.hp.entity;
 
 import java.time.LocalDate;
 
@@ -21,18 +21,18 @@ import lombok.NoArgsConstructor;
 public class HPEntity {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.UUID)
-	private String id;
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private Long id;
 	private String name;
 	private LocalDate bornDate;
 	private String house;
 	private String base64Img;
 
-	public String getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(String id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 

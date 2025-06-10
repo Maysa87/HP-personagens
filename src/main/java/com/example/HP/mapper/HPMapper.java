@@ -1,7 +1,7 @@
-package com.example.HP.mapper;
+package com.example.hp.mapper;
 
-import com.example.HP.dto.HPDto;
-import com.example.HP.entity.HPEntity;
+import com.example.hp.dto.HPDto;
+import com.example.hp.entity.HPEntity;
 import org.mapstruct.Mapper;
 
 import java.util.List;

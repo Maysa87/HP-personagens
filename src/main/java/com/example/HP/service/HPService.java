@@ -1,4 +1,4 @@
-package com.example.HP.service;
+package com.example.hp.service;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -6,10 +6,9 @@ import java.util.List;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.example.HP.dto.HPDto;
-import com.example.HP.entity.HPEntity;
-import com.example.HP.mapper.HPMapper;
-import com.example.HP.repository.HPRepository;
+import com.example.hp.dto.HPDto;
+import com.example.hp.mapper.HPMapper;
+import com.example.hp.repository.HPRepository;
 
 @Service
 public class HPService {

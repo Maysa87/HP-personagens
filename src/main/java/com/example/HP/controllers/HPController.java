@@ -1,19 +1,18 @@
-package com.example.HP.controllers;
+package com.example.hp.controllers;
 
 import java.time.LocalDate;
 import java.util.List;
 
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
-import com.example.HP.dto.HPDto;
-import com.example.HP.service.HPService;
+import com.example.hp.dto.HPDto;
+import com.example.hp.service.HPService;
 
 @RestController
 @RequestMapping("/personagens")
+
+@CrossOrigin("*")
 public class HPController {
 
 	private final HPService hpService;

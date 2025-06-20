@@ -1,0 +1,17 @@
+<div class="container mt-4">
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3">
+    <div class="col" *ngFor="let item of personagens">
+      <div class="card h-100 shadow-sm">
+        <img [src]="'data:image/jpeg;base64,' + item.base64Img" class="card-img-top" alt="Imagem de {{ item.name }}">
+
+        <div class="card-body">
+          <h5 class="card-title">{{ item.name }}</h5>
+          <p class="card-text">
+            <strong>Nascimento:</strong> {{ item.bornDate }}<br>
+            <strong>Casa:</strong> {{ item.house }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

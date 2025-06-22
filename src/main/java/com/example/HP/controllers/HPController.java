@@ -1,10 +1,13 @@
 package com.example.hp.controllers;
 
-import java.time.LocalDate;
 import java.util.List;
 
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
 
 import com.example.hp.dto.HPDto;
 import com.example.hp.service.HPService;
@@ -28,7 +31,7 @@ public class HPController {
 
 	@GetMapping("/filtro")
 	public ResponseEntity<List<HPDto>> filtro(@RequestParam(required = false) String name,
-			@RequestParam(required = false) String house, @RequestParam(required = false) LocalDate bornDate) {
-		return ResponseEntity.ok(hpService.filtro(name, house, bornDate));
+			@RequestParam(required = false) String house) {
+		return ResponseEntity.ok(hpService.filtro(name, house));
 	}
 }

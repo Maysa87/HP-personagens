@@ -1,6 +1,5 @@
 package com.example.hp.service;
 
-import java.time.LocalDate;
 import java.util.List;
 
 import org.springframework.stereotype.Service;
@@ -26,10 +25,9 @@ public class HPService {
 	}
 
 	@Transactional
-	public List<HPDto> filtro(String nome, String house, LocalDate bornDate) {
+	public List<HPDto> filtro(String nome, String house) {
 
-		return hpMapper.entitiesToDtos(
-				hpRepository.findByNameContainingIgnoreCaseOrBornDateGreaterThanEqualOrHouseContainingIgnoreCase(nome,
-						bornDate, house));
+		return hpMapper
+				.entitiesToDtos(hpRepository.findByNameContainingIgnoreCaseOrHouseContainingIgnoreCase(nome, house));
 	}
 }

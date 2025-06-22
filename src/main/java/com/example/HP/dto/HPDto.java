@@ -21,6 +21,8 @@ public class HPDto {
 	private LocalDate bornDate;
 	private String house;
 	private String base64Img;
+	private String varinha;
+	private String patrono;
 
 	public Long getId() {
 		return id;
@@ -60,6 +62,22 @@ public class HPDto {
 
 	public void setBase64Img(String base64Img) {
 		this.base64Img = base64Img;
+	}
+
+	public String getVarinha() {
+		return varinha;
+	}
+
+	public void setVarinha(String varinha) {
+		this.varinha = varinha;
+	}
+
+	public String getPatrono() {
+		return patrono;
+	}
+
+	public void setPatrono(String patrono) {
+		this.patrono = patrono;
 	}
 
 }

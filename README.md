@@ -1,4 +1,4 @@
-# ⚡ Harry Potter Personagens — API + Frontend (https://github.com/Maysa87/hp-frontend)
+# Harry Potter Personagens — API + Frontend (https://github.com/Maysa87/hp-frontend)
 
 Uma aplicação completa com backend em Java Spring Boot e frontend em Angular para visualizar personagens em Cards inspirados no universo de Harry Potter. O projeto utiliza arquitetura REST e é estilizado com Bootstrap com estética mágica.
 

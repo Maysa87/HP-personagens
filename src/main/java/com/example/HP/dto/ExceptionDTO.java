@@ -2,13 +2,11 @@ package com.example.hp.dto;
 
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
 
-@JsonAutoDetect(fieldVisibility = JsonAutoDetect.Visibility.ANY)
-public class ExceptionDTO {
-    String message;
-    Integer status;
-    public ExceptionDTO(String message, Integer status){
+import lombok.AllArgsConstructor;
 
-        this.message = message;
-        this.status = status;
-    }
+@JsonAutoDetect(fieldVisibility = JsonAutoDetect.Visibility.ANY)
+@AllArgsConstructor
+public class ExceptionDTO {
+	String message;
+	Integer status;
 }

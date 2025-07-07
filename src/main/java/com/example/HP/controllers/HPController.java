@@ -14,7 +14,6 @@ import com.example.hp.service.HPService;
 
 @RestController
 @RequestMapping("/personagens")
-
 @CrossOrigin("*")
 public class HPController {
 
